@@ -1,0 +1,183 @@
+/* body{
+    background-color: black;
+    color: white;
+}
+.title{
+    text-align: center;
+    size: 40px;
+}
+.expense-container div{
+    /* margin-left: 50px; 
+    font-size: 20px;
+    color: gray;
+}
+
+.net-expenses-container{
+    text-align: center;
+    border: 2px solid gray;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.numbers{
+    text-align: center;
+    color: green;
+    font-size: 70px;
+}
+
+.income{
+    min-height: 200px;
+    border: solid 1px green;
+    border-radius: 10px;
+    margin: 50px;
+}
+.expense{
+    min-height: 200px;
+    border: solid 1px #CF0A0A;
+    border-radius: 10px;
+    margin: 50px;
+}
+
+button{
+    border-radius: 5px;
+    background-color: #EEEEEE;
+    color: black;
+}
+
+button:hover{
+    background-color: gray ;
+}
+
+
+ */
+
+ body {
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  .income,
+  .expense {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .income h2,
+  .expense h2 {
+    margin-top: 0px;
+  }
+  
+  .income-list,
+  .expense-list {
+    list-style: none;
+    padding-left: 0px;
+  }
+  
+  .income-list li,
+  .expense-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .income-list li:last-child,
+  .expense-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .income-list li .delete-btn,
+  .expense-list li .delete-btn {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-container select,
+  .form-container input[type="number"],
+  .form-container input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border:solid gray;
+  }
+  
+   button {
+    padding: 5px 10px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+
+  .add-btn{
+    float: inline-end;
+    transform: translate(-50%,33%);
+  }
+  button:hover {
+    background-color: #000000;
+  }
+  
+  .net-expenses-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .expense-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .expense-container div {
+    /* width: 25%; */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .expense-container div h2 {
+    margin-top: 0px;
+  }
+  
+  .numbers {
+    font-size: 2em;
+    margin: 0px;
+  }
+  
+input{
+    border: solid gray;
+}
