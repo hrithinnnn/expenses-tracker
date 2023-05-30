@@ -132,7 +132,7 @@ button:hover{
   
    button {
     padding: 5px 10px;
-    background-color: gray;
+    background-color: black;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -145,7 +145,7 @@ button:hover{
     transform: translate(-50%,33%);
   }
   button:hover {
-    background-color: #000000;
+    background-color: grey;
   }
   
   .net-expenses-container {
