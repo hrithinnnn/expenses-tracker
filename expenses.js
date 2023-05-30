@@ -60,14 +60,14 @@ function showTransactions() {
   // let incomeIndex=0;
   let totalIncome = 0;
   incomeList.forEach((income) => {
-    incomeHTML += `<li> ${income.description}: ${income.amount}<button style="background:transparent; float:right; font-size:15px" class="delete-btn" onclick="deleteIncome(${income.incomeIndex})">❌</button><button style="float:right;" class="delete-btn" onclick="editIncome(${income.incomeIndex})">edit</button></li>`;
+    incomeHTML += `<li> ${income.description}: ${income.amount}<button style="background:transparent; float:right; font-size:15px" class="delete-btn" onclick="deleteIncome(${income.incomeIndex})">❌</button><button style="float:right;" class="delete-btn" onclick="editIncome(${income.incomeIndex})">edit</button></li><br>`;
     totalIncome += parseInt(income.amount);
   });
   document.getElementById("income-list").innerHTML = incomeHTML;
 
   let totalExpense = 0;
   expenseList.forEach((expense) => {
-    expenseHTML += `<li> ${expense.description}: ${expense.amount}<button style="background:transparent; float:right; font-size:15px" class="delete-btn" onclick="deleteExpense(${expense.expenseIndex})">❌</button><button style="float:right;"onclick="editExpense(${expense.expenseIndex})">edit</button></li>`;
+    expenseHTML += `<li> ${expense.description}: ${expense.amount}<button style="background:transparent; float:right; font-size:15px" class="delete-btn" onclick="deleteExpense(${expense.expenseIndex})">❌</button><button style="float:right;"onclick="editExpense(${expense.expenseIndex})">edit</button></li><br>`;
     totalExpense += parseInt(expense.amount);
   });
   document.getElementById("expense-list").innerHTML = expenseHTML;
